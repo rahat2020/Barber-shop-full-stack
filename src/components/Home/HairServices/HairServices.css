@@ -1,0 +1,103 @@
+
+     /*--services--*/
+
+
+#service {
+        width: 100%;
+        padding: 40px 0px;
+        background: #d4d0d0;
+    }
+.titleText{
+    font-weight: bolder;
+    text-align: center;
+}
+
+.serviceBox {
+        width: 93%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: auto;
+}
+.single_serviceBox{
+
+        flex-basis: 48%;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 48px;
+        color: #e7d8d8f7;
+        font-style:impact;
+        font-size:17px;
+        font-weight: bolder;
+        position: relative;
+}
+        
+.single_serviceBox img{
+
+    width: 90%;
+    border-radius: 7px;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #a09b217a, #2da52ba3);
+    opacity: 0;
+    transition:1s ;
+}
+.single_serviceBox:hover .overlay{
+
+opacity: 1;
+
+}
+.serviceDex {
+
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr{
+
+    background:rgb(0, 0, 0) ;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 50%;
+}
+h1:hover {
+    color: darkblue;
+}
+p{
+    font-size: 14px;
+}
+.single_serviceBox:hover .serviceDex{
+
+bottom:40%;
+opacity: 1;
+
+}
+@media screen and ( max-width:750px) {
+    .single-service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .servicedesc p{
+        font-size: 14px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .single_serviceBox:hover .serviceDex{
+
+        bottom: 22% !important;
+        
+        }
+
+}
