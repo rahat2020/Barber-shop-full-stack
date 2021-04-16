@@ -6,6 +6,7 @@ import Testimonial from '../Testimonial/Testimonial';
 import Fotter from '../../Shared/Fotter/Fotter';
 
 const Home = () => {
+
     return (
         <div>
             <Header></Header>
@@ -13,6 +14,11 @@ const Home = () => {
             <Features></Features>
             <Testimonial></Testimonial>
             <Fotter></Fotter>
+            {/* <div>
+                {
+                     style.map(service => <HairServices key={service._id} service={service}> </HairServices>) 
+                }
+            </div> */}
         </div>
     );
 };

@@ -11,7 +11,7 @@ const Features = () => {
                 <h1>Why chose us</h1>
             </div>
 
-            <dib className="featuresBox mt">
+            <div className="featuresBox mt">
                 <div className="features">
                     <h1>Experienced staff</h1>
                     <div className="featureDex">
@@ -55,7 +55,7 @@ const Features = () => {
                     <div className="featuresImg">
                         <img src={barber} alt=""/>
                     </div>
-            </dib>
+            </div>
         </section>
     );
 };
