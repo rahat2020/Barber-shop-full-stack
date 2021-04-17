@@ -10,6 +10,9 @@ import { createContext, useState } from 'react';
 import MakeOrder from './components/MakeOrder/MakeOrder/MakeOrder';
 import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import Admin from './components/Admin/Admin/Admin';
+import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
+import Checkout from './components/MakeOrder/Chcekout/Checkout';
+import AddReview from './components/MakeOrder/AddReview/AddReview';
 export const UserContext = createContext();
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -25,15 +28,18 @@ function App() {
           <Route path="/login">
               <Login/>
           </Route>
-          <Route path="/order">
+          <PrivateRoute path="/order/:_id">
               <MakeOrder/>
+          </PrivateRoute>
+          <PrivateRoute path="/checkout/:_id">
+              <Checkout/>
+          </PrivateRoute>
+          <Route path="/addReview">
+            <AddReview/>
           </Route>
-          <Route path="/dashboard">
-            <Dashboard/>
-          </Route>
-          <Route path="/admin">
+          <PrivateRoute path="/admin">
             <Admin/>
-          </Route>
+          </PrivateRoute>
         </Switch>
       </Router>
       </UserContext.Provider>

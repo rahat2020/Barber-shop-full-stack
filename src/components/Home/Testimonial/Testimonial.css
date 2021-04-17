@@ -21,6 +21,13 @@
             border-radius: 0 10px 20px 0px #00968814;
             cursor:pointer;
             transition: .5s;
+            /* border: 1px solid; */
+            padding: 10px;
+            box-shadow: 5px 5px 5px #c9c6c6;
+            margin: 10px;
+        }
+        .paraStyle{
+            font-weight: 600;
         }
         .testimonial-col p{
         

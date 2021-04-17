@@ -17,13 +17,13 @@ const Navbar = () => {
                 <div className="text-white">
                     <ul class= "nav justify-content-end mx-5">
                         <li class="nav-item ">
-                            <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                            <a class="nav-link text-white" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#C-Backpack"> C-Backpack</a>
+                            <a class="nav-link text-white" href="admin"> Admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#M-Backpack">M-Backpack</a>
+                            <a class="nav-link text-white" href="order">Order</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">About us</a>

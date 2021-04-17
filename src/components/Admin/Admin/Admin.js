@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../../Shared/Navbar/Navbar';
 import AddServices from '../AddServices/AddServices';
 import AdminSidebar from '../AdminSidebar/AdminSidebar';
 
@@ -11,6 +12,7 @@ const Admin = () => {
     return (
         <section>
             <div style={containerStyle} className="container-fluid row">
+                <Navbar></Navbar>
                 <div className="col-md-3">
                     <AdminSidebar/>
                 </div>

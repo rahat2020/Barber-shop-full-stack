@@ -4,16 +4,14 @@ import './HeaderMain.css';
 const HeaderMain = () => {
 
     return (
-        <section id="banner">
-            {/* <img src="logo.png" alt="" class="logo"> */}
-                <div class="bannerText">
+        <section id="banner">                <div class="bannerText">
                     <h1>Hair studio</h1>
                     <p>Style your hair style your life</p>
 
                     <div class="bannerBtn">
 
-                        <a href="#"><span ></span>Read more</a>
-                        <a href="#"><span ></span>Find out</a>
+                        <a href="www.xyz.com"><span ></span>Read more</a>
+                        <a href="www.xyz.com"><span ></span>Find out</a>
 
                     </div>
 
