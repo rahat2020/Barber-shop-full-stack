@@ -13,7 +13,7 @@ const Checkout = () => {
 
     const handleSubmit = () => {
         const items = { ...loggedInUser, product: checkOutDetails, date: new Date() }
-        const url = `http://localhost:5000/itemOrdered`
+        const url = `https://sleepy-fortress-88910.herokuapp.com/itemOrdered`
         fetch(url, {
             method: 'POST',
             headers: {
@@ -29,9 +29,9 @@ const Checkout = () => {
     }
 
     useEffect(() => {
-        const url = `http://localhost:5000/book`
+        const url = `https://sleepy-fortress-88910.herokuapp.com/book`
          fetch(url)
-        // fetch('http://localhost:5000/booked')
+        // fetch('https://sleepy-fortress-88910.herokuapp.com/booked')
             .then(response => response.json())
             .then(data => setCheckout(data))
     }, [])

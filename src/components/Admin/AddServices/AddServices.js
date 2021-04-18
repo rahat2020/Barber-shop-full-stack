@@ -39,7 +39,7 @@ const AddServices = () => {
         e.preventDefault(true);
         if (service.imgURL !== '') {
             console.log(service)
-            const url = `http://localhost:5000/addServices`
+            const url = `https://sleepy-fortress-88910.herokuapp.com/addServices`
             fetch(url, {
                 method: 'POST',
                 headers: {
@@ -71,7 +71,7 @@ const AddServices = () => {
                     <textarea type="text" class="form-control" onBlur={handleChange} id="exampleInputPassword1" name="description"/>
                 </div>
                 <div class="mb-3 form-check">
-                    <input type="file" class=" " onChange={handleImgUpload} id="exampleFile1" name="img"/>
+                    <input type="file" class="form-control" onChange={handleImgUpload} id="exampleFile1" name="img"/>
                 </div>
                 <button type="submit" onClick={handleAddService} class="btn btn-primary">Submit</button>
             </form>

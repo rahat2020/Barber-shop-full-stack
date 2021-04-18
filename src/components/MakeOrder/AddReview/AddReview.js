@@ -43,7 +43,7 @@ const AddReview = () => {
         e.preventDefault(true);
         if (service.imgURL !== '') {
             console.log(service)
-            const url = `http://localhost:5000/review`
+            const url = `https://sleepy-fortress-88910.herokuapp.com/review`
             fetch(url, {
                 method: 'POST',
                 headers: {

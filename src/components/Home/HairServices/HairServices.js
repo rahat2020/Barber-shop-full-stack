@@ -12,7 +12,7 @@ const HairServices = () => {
     console.log(style)
 
     useEffect(() => {
-        const url = `http://localhost:5000/services`;
+        const url = `https://sleepy-fortress-88910.herokuapp.com/services`;
         fetch(url)
             .then(res => res.json())
             .then(data => setStyle(data))

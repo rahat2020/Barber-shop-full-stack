@@ -8,7 +8,7 @@ const Testimonial = () => {
     console.log(review)
 
     useEffect(() => {
-        const url = `http://localhost:5000/reviews`
+        const url = `https://sleepy-fortress-88910.herokuapp.com/reviews`
         fetch(url)
             .then(response => response.json())
             .then(data => setReview(data))

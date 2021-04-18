@@ -7,13 +7,15 @@ const Order = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
     useEffect(() => {
-        fetch('http://localhost:5000/ordered?email' + loggedInUser.email)
+        fetch('https://sleepy-fortress-88910.herokuapp.com/ordered?email='+ loggedInUser.email)
             .then(response => response.json())
             .then(data => setOrder(data))
     }, [])
     return (
         <div>
+            <h3> Your ordered list</h3>
             <table className="table border" style={{width: '80%'}}>
+                
                 <thead>
                     <tr>
                         <th>#</th>
